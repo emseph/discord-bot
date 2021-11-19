@@ -3,7 +3,7 @@ import random
 import time
 
 # insert bot token here
-TOKEN = 'OTExMTU2Nzk5MDQwNzg2NDMy.YZdS5Q.3FSzC5QVQiesD8BF4HHgEIn23SQ'
+TOKEN = ''
 
 client = discord.Client()
 
@@ -39,7 +39,7 @@ async def on_message(message):
         return
 
     if message.author.id == 312524560224223233:  # server owner
-        await message.channel.send('Hello master')
+        await message.channel.send(f'Hello master')
         return
     if message.author.id != 312524560224223233:  # if message sender is not server owner
         if user_message == '<@!911156799040786432>':

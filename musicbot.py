@@ -5,7 +5,7 @@ from discord.ext import commands
 # import requests
 # import json
 
-TOKEN = 'OTAxNzk2NjEyNTUxMDg2MTAy.YXVFiw.5D_pksRYZKJOoKb4r8u9PuYH3a0'
+TOKEN = ''
 client = discord.Client()
 
 client = commands.Bot(command_prefix="%")
@@ -23,4 +23,4 @@ async def on_ready():
 #     voice = discord.utils.get(client.voice_clients, guild = ctx.)
 
 
-client.run('OTAxNzk2NjEyNTUxMDg2MTAy.YXVFiw.5D_pksRYZKJOoKb4r8u9PuYH3a0')
+client.run(TOKEN)

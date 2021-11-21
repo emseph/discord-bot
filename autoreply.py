@@ -38,10 +38,11 @@ async def on_message(message):
         await message.channel.send(f'This can be used anywhere!')
         return
 
-    if message.author.id == 312524560224223233:  # server owner
+    if message.author.id == 312524560224223233:  # server owner, REPLACE ID WITH YOUR OWN ID
         await message.channel.send(f'Hello master')
         return
-    if message.author.id != 312524560224223233:  # if message sender is not server owner
+    # if message sender is not server owner, REPLACE ID WITH YOUR OWN ID
+    if message.author.id != 312524560224223233:
         if user_message == '<@!911156799040786432>':
             await message.channel.send(random.choice(test))
         return
@@ -51,60 +52,5 @@ async def on_message(message):
 
 
     '''
-
-    # autoreply lines
-
-    slur = ['fuck']
-    # autoreply end
-
-    #    if message.author.id == 312524560224223233:
-    #         if user_message == '<@!312533659880259584>':
-    #             await message.channel.send('Bakla yang tanginang yan')
-    #         if user_message == 'Hello':
-    #             await message.channel.send('Hi pogi')
-    #         if user_message == '<@!901304399777919077>':
-    #             print(f'{username}: {user_message} ({channel})')
-    #             await message.channel.send(autoreply)
-    #         return
-
-    #     if message.author.id == 690900203414224906:
-    #         await message.channel.send('hey, just wanna ask something if kasama mo pa din sa room kanina si ash nung pauwi sya?')
-    #         return
-
-    #     # ID ni Jorg
-    #     if message.author.id == 312533659880259584:
-    #         await message.channel.send('Jakol')
-    #         return
-
-    #     if user_message == '<@!312533659880259584>':
-    #         await message.channel.send('Bakla yang tanginang yan')
-    #         return
-
-    #     if user_message == '<@!901304399777919077>':
-    #         print(f'{username}: {user_message} ({channel})')
-    #         await message.channel.send(autoreply)
-    #         return
-
-    #     elif 'fuck' in user_message:
-    #         print(f'{username}: {user_message} ({channel})')
-    #         await message.channel.send('Tangina mo bakla!!!')
-    #         return
-    #     elif '<@!901304399777919077>' in user_message:
-    #         if 'fuck' in user_message:
-    #             print(f'{username}: {user_message} ({channel})')
-    #             await message.channel.send('Tangina mo bakla!!!')
-    #             return
-    #     elif user_message.lower() == 'hello':
-    #         await message.channel.send("Naol")
-    #         return
-
-    # if message.channel.name != '✉｜shitposting':
-    #     if user_message.lower() == 'hello':
-    #         await message.channel.send("Naolss")
-    #         return
-    #     if user_message.lower() == '<@!901304399777919077>':
-    #         print(f'{username}: {user_message} ({channel})')
-    #         await message.channel.send(f'Dili nalang ako magtalk')
-    #         return
 
 client.run(TOKEN)
